@@ -1,0 +1,7 @@
+<strong><h1><%= notice%></h1></strong>
+<%= form_with(model: @demo, local: true) do |form| %>
+  <%= form.text_field :task, placeholder: "Task" %>
+
+  <%= form.text_field :description, placeholder: "Description" %>
+  <%= form.submit "Add/Update ToDo" %>
+<% end %>
